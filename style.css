@@ -2,9 +2,48 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-    
+
+    /* text color variable */
+    --text-primary: hsl(0, 0%, 13%);
+    --text-secondary: hsl(0, 0%, 40%);
+    --text-tertiary: hsl(0, 0%, 61%);
+    --text-quaternary: hsl(0, 0%, 100%);
+
+    /* background color variables */
+    --background-primary: hsl(0, 0%, 100%);
+    --background-secondary: hsl(0, 0%, 96%);
+    --background-tertiary: hsl(233, 27%, 94%);
+    --background-quaternary: hsl(0, 0%, 13%);
+    --background-alternative-1: hsl(0, 0%, 77%);
+    --background-alternative-2: hsl(0, 0%, 17%);
+
+    /* stroke color variables */
+    --strokes-primary: hsl(0, 0%, 83%);
+    --strokes-secondary: hsl(233, 27%, 94%);
+    --strokes-tertiary: hsl(0, 0%, 13%);
+    --strokes-quaternary: hsl(0, 0%, 17%);
+    --strokes-alternative: hsl(233, 18%, 94%);
+
+    /* accent color variables */
+    --accent-primary: hsl(233, 27%, 94%);
+    --accent-secondary: hsl(0, 0%, 96%);
+    --accent-tertiary: hsl(0, 0%, 13%);
+    --accent-quaternary: hsl(0, 0%, 17%);
+
+    /* alert color variables */
+    --alert-primary: hsl(123, 33%, 26%);
+    --alert-secondary: hsl(233, 27%, 94%);
+
 }
 
 body {
-    background-color:#;
+    background-color: var(--background-primary);
+}
+
+.my_projects_container {
+    background-color: var(--background-secondary);
+}
+
+.lets_work_together_container {
+    background-color: linear-gradient(141deg, var(--background-alternative-1) 15.06%, var(--background-tertiary) 81.78%);
 }

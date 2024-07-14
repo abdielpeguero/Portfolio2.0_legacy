@@ -1,0 +1,10 @@
+/* General settings */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+    
+}
+
+body {
+    background-color:#;
+}

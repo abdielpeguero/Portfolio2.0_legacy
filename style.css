@@ -53,6 +53,19 @@ p {
 
 li {
     list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact_button {
+    text-decoration: none;
+}
+
+.project_cta {
+    text-decoration: none;
 }
 
 .navbar_selected {
@@ -62,7 +75,7 @@ li {
     font-family: inter;
     font-weight: 600;
     margin: 0;
-    cursor: default;
+    cursor: pointer;
 }
 
 .navbar_unselected {
@@ -72,7 +85,7 @@ li {
     font-family: inter;
     font-weight: 400;
     margin: 0;
-    cursor: default;
+    cursor: pointer;
 }
 
 .contact_button {
@@ -82,7 +95,7 @@ li {
     font-family: inter;
     font-weight: 400;
     margin: 0;
-    cursor: default;
+    cursor: pointer;
 }
 
 .display_2_med {
@@ -203,6 +216,18 @@ li {
     cursor: default;
 }
 
+/*photo settings */
+
+.portfolio_profile_pic {
+    width: 280px;
+    height: 280px;
+}
+
+.project_cover {
+    width: 480px;
+    height: 480px;
+}
+
 .my_projects_container {
     background-color: var(--background-secondary);
 }
@@ -210,3 +235,21 @@ li {
 .lets_work_together_container {
     background-color: linear-gradient(141deg, var(--background-alternative-1) 15.06%, var(--background-tertiary) 81.78%);
 }
+
+
+/* photo settings */
+
+@media (max-width:390px) {
+
+    .portfolio_profile_pic {
+        width: 232px;
+        height: 232px;
+    }
+    
+    .project_cover {
+        width: 288px;
+        height: 288px;
+    }
+
+}
+

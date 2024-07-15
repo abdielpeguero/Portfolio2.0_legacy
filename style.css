@@ -40,6 +40,169 @@ body {
     background-color: var(--background-primary);
 }
 
+
+/* Typography settings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inter;
+}
+
+p {
+    font-family: inter;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar_selected {
+    color: var(--text-primary); 
+    font-size: 16px;
+    line-height: 24px;
+    font-family: inter;
+    font-weight: 600;
+    margin: 0;
+    cursor: default;
+}
+
+.navbar_unselected {
+    color: var(--text-primary); 
+    font-size: 16px;
+    line-height: 24px;
+    font-family: inter;
+    font-weight: 400;
+    margin: 0;
+    cursor: default;
+}
+
+.contact_button {
+    color: var(--text-primary); 
+    font-size: 16px;
+    line-height: 24px;
+    font-family: inter;
+    font-weight: 400;
+    margin: 0;
+    cursor: default;
+}
+
+.display_2_med {
+    color: var(--text-primary); 
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+
+.display_1_med {
+    color: var(--text-primary); 
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+
+.title_3_reg>
+ {
+    color: var(--text-primary); 
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 0;
+    cursor: default;
+}
+
+.title_2_med {
+    color: var(--text-primary); 
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+
+.title_2_reg {
+    color: var(--text-primary); 
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 0;
+    cursor: default;
+}
+
+.title_1_med {
+    color: var(--text-primary); 
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+
+.title_1_reg {
+    color: var(--text-primary); 
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+
+.body_2_med {
+    color: var(--text-primary); 
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+
+.body_2_reg {
+    color: var(--text-primary); 
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    cursor: default;
+}
+
+.body_1_med {
+    color: var(--text-primary); 
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+
+.body_1_reg {
+    color: var(--text-primary); 
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+    cursor: default;
+}text-primary
+
+ .caption_med {
+    color: var(--text-primary); 
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+
+.caption_reg {
+    color: var(--text-primary); 
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0;
+    cursor: default;
+}
+
 .my_projects_container {
     background-color: var(--background-secondary);
 }

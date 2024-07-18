@@ -224,8 +224,10 @@ a {
 }
 
 .project_cover {
+    display: flex;
     width: 480px;
     height: 480px;
+    object-fit: contain;
 }
 
 .my_projects_container {
@@ -236,8 +238,28 @@ a {
     background-color: linear-gradient(141deg, var(--background-alternative-1) 15.06%, var(--background-tertiary) 81.78%);
 }
 
+/* component properties */
 
-/* photo settings */
+/* navbar */
+
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: linear-gradient (180deg, hsla(0, 0%, 96%, 0.6) 0%, hsla(0, 0%, 100%, 0.6) 100%);
+    border: 1px solid var(--Strokes-secondary);
+}
+
+.navbar_container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_list {
+    display: flex;
+}
+
+
+/* media queries */
 
 @media (max-width:390px) {
 

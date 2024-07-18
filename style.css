@@ -238,8 +238,6 @@ a {
     background-color: linear-gradient(141deg, var(--background-alternative-1) 15.06%, var(--background-tertiary) 81.78%);
 }
 
-/* component properties */
-
 /* navbar */
 
 .navbar {
@@ -257,7 +255,6 @@ a {
 .navbar_list {
     display: flex;
 }
-
 
 /* media queries */
 

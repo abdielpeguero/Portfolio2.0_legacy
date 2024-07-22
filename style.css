@@ -1,7 +1,6 @@
 /* General settings */
 *, *::before, *::after { 
     box-sizing: border-box;
-    align-items: center; 
 }
 
 :root {
@@ -178,14 +177,16 @@ a {
 
 /* General settings */
 
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     padding: 0px;
     margin: 0px;
 }
 main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -205,19 +206,17 @@ main {
     background-color: var(--background-secondary);
 }
 
-.lets_work_together_container {
-    background-color: linear-gradient(141deg, var(--background-alternative-1) 15.06%, var(--background-tertiary) 81.78%);
-}
 
 /* navbar */
 
 .navbar {
     display: flex;
-    position: fixed;
+    position: sticky;
     width: 1000px;
-    margin: 72px 0 0 0;
+    margin: 0;
+    top: 48px;
     padding: 24px 64px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, rgba(246, 246, 246, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%);
     border-radius: 48px;
@@ -228,6 +227,7 @@ main {
 
 .navbar_container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -277,6 +277,24 @@ main {
     cursor: pointer;
 }
 
+/* Scroll up button */
+
+.scroll_up_arrow_container {
+    display: flex;
+    position: fixed;
+    margin: 0;
+    top: 768px;
+    right: 10%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(246, 246, 246, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%);
+    border-radius: 999px;
+    border: 1px solid var(--Strokes-secondary, #ECEDF4);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(4px);
+}
+
 /* hero section */
 
 .hero {
@@ -284,7 +302,8 @@ main {
     flex-direction: column;
     width: 100%;
     padding: 332px 0px 224px 0px;
-    align-self: stretch;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero_container {
@@ -307,26 +326,92 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.my_projects_container {
-    width: 1280px;
+    width: 100%;
+    padding: 48px 96px;
+    gap: 48px;
 }
 
 .my_projects_container {
     display: flex;
+    width: 1280px;
+    background: var(--background-secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 64px;
+    border-radius: 48px;
 }
 
 .projects_duet_wrap {
     display: flex;
 }
 
+.project_nameANDcta {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
 .project_cta {
+    display: flex;
     text-decoration: none;
 }
+
+
+
+/* Lets work together */
+
+
+.lets_work_together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 96px;
+}
+
+.lets_work_together_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(141deg, #2B2B2B 15.06%, #000 81.78%);
+    padding: 56px 32px;
+    border: 1px solid var(--Strokes-secondary, #2B2B2B);
+    border-radius: 24px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 96px;
+    width: 100%;
+    border: 1px solid var(--Strokes-secondary, #ECEDF4);
+    background: var(--Background-primary, #FFF)
+}
+
+.footer_container {
+    display: flex;
+    width: 748px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.made_with_love_by_me {
+    display: flex;
+}
+
+.social_media {
+    display: flex;
+}
+
 
 
 /* media queries */

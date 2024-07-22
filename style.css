@@ -61,7 +61,9 @@ a {
     color: var(--text-primary); 
     font-size: 48px;
     line-height: 64px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -71,6 +73,9 @@ a {
     font-size: 32px;
     line-height: 48px;
     font-weight: 500;
+    font-family: inter;
+    font-style: normal;
+    text-align: center;
     margin: 0;
     cursor: default;
 }
@@ -80,7 +85,9 @@ a {
     color: var(--text-primary); 
     font-size: 24px;
     line-height: 32px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -89,7 +96,9 @@ a {
     color: var(--text-primary); 
     font-size: 20px;
     line-height: 32px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -98,8 +107,11 @@ a {
     color: var(--text-primary); 
     font-size: 20px;
     line-height: 32px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
+    text-align: center;
     cursor: default;
 }
 
@@ -107,7 +119,9 @@ a {
     color: var(--text-primary); 
     font-size: 18px;
     line-height: 28px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -116,7 +130,10 @@ a {
     color: var(--text-primary); 
     font-size: 18px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: inter;
+    font-style: normal;
+    text-align: center;
     margin: 0;
     cursor: default;
 }
@@ -125,7 +142,9 @@ a {
     color: var(--text-primary); 
     font-size: 16px;
     line-height: 24px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -134,7 +153,9 @@ a {
     color: var(--text-primary); 
     font-size: 16px;
     line-height: 24px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -143,7 +164,9 @@ a {
     color: var(--text-primary); 
     font-size: 14px;
     line-height: 20px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -152,7 +175,9 @@ a {
     color: var(--text-primary); 
     font-size: 14px;
     line-height: 20px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -161,7 +186,9 @@ a {
     color: var(--text-primary); 
     font-size: 12px;
     line-height: 16px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -170,7 +197,9 @@ a {
     color: var(--text-primary); 
     font-size: 12px;
     line-height: 16px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -195,23 +224,11 @@ main {
 /*photo settings */
 
 
-.project_cover {
-    display: flex;
-    width: 480px;
-    height: 480px;
-    object-fit: contain;
-}
-
-.my_projects_container {
-    background-color: var(--background-secondary);
-}
-
-
 /* navbar */
 
 .navbar {
     display: flex;
-    position: sticky;
+    position: fixed;
     width: 1000px;
     margin: 0;
     top: 48px;
@@ -232,6 +249,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
+    margin: 0px;
 }
 
 .navbar_list {
@@ -247,6 +265,7 @@ main {
     color: var(--text-primary);
     font-family: Poppins; 
     font-size: 16px;
+    font-style: normal;
     line-height: 24px;
     font-weight: 600;
     margin: 0;
@@ -254,9 +273,10 @@ main {
 }
 
 .navbar_unselected {
-    color: var(--text-primary); 
+    color: var(--text-secondary); 
     font-size: 16px;
     line-height: 24px;
+    font-style: normal;
     font-family: Poppins;
     font-weight: 400;
     margin: 0;
@@ -299,24 +319,31 @@ main {
 
 .hero {
     display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 332px 0px 224px 0px;
     justify-content: center;
-    align-items: center;
 }
 
 .hero_container {
     display: flex;
     width: 848px;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 72px;
 }
 
 .portfolio_profile_pic {
     width: 280px;
     height: 280px;
+}
+
+.short_bio {
+    display: flex;
+    flex-direction: column;
+    width: 496px;
+    height: 208px;
+    gap: 24px;
+    padding: 0px 16px;
+    margin: 0;
 }
 
 /* My projects */
@@ -333,17 +360,31 @@ main {
 
 .my_projects_container {
     display: flex;
-    width: 1280px;
     background: var(--background-secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 64px;
+    gap: 96px;
     border-radius: 48px;
 }
 
 .projects_duet_wrap {
     display: flex;
+    gap: 40px;
+}
+
+.project_cover {
+    display: flex;
+    height: 480px;
+    object-fit:cover;
+    border-radius: 32px;
+}
+
+.project_single_container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .project_nameANDcta {
@@ -357,6 +398,8 @@ main {
 
 .project_cta {
     display: flex;
+    align-items: center;
+    gap: 4px;
     text-decoration: none;
 }
 

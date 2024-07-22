@@ -211,9 +211,10 @@ main {
 
 .navbar {
     display: flex;
-    position: fixed;
+    position: sticky;
     width: 1000px;
-    margin: 72px 0 0 0;
+    margin: 0;
+    top: 48px;
     padding: 24px 64px;
     justify-content: space-between;
     align-items: center;
@@ -274,6 +275,24 @@ main {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+/* Scroll up button */
+
+.scroll_up_arrow_container {
+    display: flex;
+    position: fixed;
+    margin: 0;
+    top: 768px;
+    right: 10%;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(246, 246, 246, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%);
+    border-radius: 999px;
+    border: 1px solid var(--Strokes-secondary, #ECEDF4);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(4px);
 }
 
 /* hero section */

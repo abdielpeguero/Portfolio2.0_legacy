@@ -1,13 +1,4 @@
-gsap.fromTo(
-    ".loading_page",
-    { opacity: 1,   
-    },
-    {
-        opacity: 0,
-        duration: 1,
-        delay: 3.2,
-    }
-);
+gsap.fromTo(".loading_page", { opacity: 1,}, { opacity: 0, duration: 1, delay: 3.2,});
 
 gsap.fromTo(
     ".logo_name",
@@ -23,12 +14,11 @@ gsap.fromTo(
     }
 );
 
-window.addEventListener("loading_page", () => {
-    const loading_page = document.querySelector(".loading_page");
+function removeLoadingPage() {
+    const loadingPage = document.getElementById('loadingPage');
+    setTimeout(()=>{
+        loadingPage.classList.add('loading_page--hidden');
+    }, 4200);
+}
 
-    loading_page.classList.add("loading_page--hidden");
-
-    loading_page.addEventListener("opacity=0", () => {
-        document.main.removeChild(loading_page);
-    });
-});
+removeLoadingPage();

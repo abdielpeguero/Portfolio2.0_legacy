@@ -241,7 +241,8 @@ main {
 
 .loading_page--hidden {
     opacity: 0;
-    visibility: hidden,
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .name_container {

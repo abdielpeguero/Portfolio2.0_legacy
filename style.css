@@ -61,7 +61,9 @@ a {
     color: var(--text-primary); 
     font-size: 48px;
     line-height: 64px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -71,6 +73,9 @@ a {
     font-size: 32px;
     line-height: 48px;
     font-weight: 500;
+    font-family: inter;
+    font-style: normal;
+    text-align: center;
     margin: 0;
     cursor: default;
 }
@@ -80,7 +85,9 @@ a {
     color: var(--text-primary); 
     font-size: 24px;
     line-height: 32px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -89,7 +96,9 @@ a {
     color: var(--text-primary); 
     font-size: 20px;
     line-height: 32px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -98,8 +107,11 @@ a {
     color: var(--text-primary); 
     font-size: 20px;
     line-height: 32px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
+    text-align: center;
     cursor: default;
 }
 
@@ -107,7 +119,9 @@ a {
     color: var(--text-primary); 
     font-size: 18px;
     line-height: 28px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -116,7 +130,10 @@ a {
     color: var(--text-primary); 
     font-size: 18px;
     line-height: 28px;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: inter;
+    font-style: normal;
+    text-align: center;
     margin: 0;
     cursor: default;
 }
@@ -125,7 +142,9 @@ a {
     color: var(--text-primary); 
     font-size: 16px;
     line-height: 24px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -134,7 +153,9 @@ a {
     color: var(--text-primary); 
     font-size: 16px;
     line-height: 24px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -143,7 +164,9 @@ a {
     color: var(--text-primary); 
     font-size: 14px;
     line-height: 20px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -152,7 +175,9 @@ a {
     color: var(--text-primary); 
     font-size: 14px;
     line-height: 20px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -161,7 +186,9 @@ a {
     color: var(--text-primary); 
     font-size: 12px;
     line-height: 16px;
+    font-family: inter;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -170,7 +197,9 @@ a {
     color: var(--text-primary); 
     font-size: 12px;
     line-height: 16px;
+    font-family: inter;
     font-weight: 400;
+    font-style: normal;
     margin: 0;
     cursor: default;
 }
@@ -192,18 +221,65 @@ main {
 }
 
 
-/*photo settings */
+/*preloader */
 
-
-.project_cover {
+.loading_page {
     display: flex;
-    width: 480px;
-    height: 480px;
-    object-fit: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(246, 246, 246, 100) 0%, rgba(255, 255, 255, 100) 100%);
+    height: 100%;
+    width: 100%;
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: opacity 0.75s, visibility 0.75s;
 }
 
-.my_projects_container {
-    background-color: var(--background-secondary);
+.loading_page--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.name_container {
+    height: 30px;
+    overflow: hidden;
+}
+
+#ap_logo_preloader1 {
+    height: 148px;
+    width: 148px;
+    stroke: var(--strokes-tertiary);
+    stroke-linejoin: round;
+    fill-opacity: 0;
+    stroke-dasharray: 4500;
+    animation: draw 28s ease;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 4500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.logo_name {
+    color: var(--text-primary); 
+    font-size: 20px;
+    line-height: 32px;
+    font-family: inter;
+    font-weight: 550;
+    font-style: normal;
+    margin: 0;
+    text-align: center;
+    cursor: default;
+    text-transform: lowercase;
 }
 
 
@@ -211,7 +287,7 @@ main {
 
 .navbar {
     display: flex;
-    position: sticky;
+    position: fixed;
     width: 1000px;
     margin: 0;
     top: 48px;
@@ -232,6 +308,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
+    margin: 0px;
 }
 
 .navbar_list {
@@ -247,6 +324,7 @@ main {
     color: var(--text-primary);
     font-family: Poppins; 
     font-size: 16px;
+    font-style: normal;
     line-height: 24px;
     font-weight: 600;
     margin: 0;
@@ -254,9 +332,10 @@ main {
 }
 
 .navbar_unselected {
-    color: var(--text-primary); 
+    color: var(--text-secondary); 
     font-size: 16px;
     line-height: 24px;
+    font-style: normal;
     font-family: Poppins;
     font-weight: 400;
     margin: 0;
@@ -299,24 +378,31 @@ main {
 
 .hero {
     display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 332px 0px 224px 0px;
     justify-content: center;
-    align-items: center;
 }
 
 .hero_container {
     display: flex;
     width: 848px;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 72px;
 }
 
 .portfolio_profile_pic {
     width: 280px;
     height: 280px;
+}
+
+.short_bio {
+    display: flex;
+    flex-direction: column;
+    width: 496px;
+    height: 208px;
+    gap: 24px;
+    padding: 0px 16px;
+    margin: 0;
 }
 
 /* My projects */
@@ -327,23 +413,37 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 48px 96px;
+    padding: 96px;
     gap: 48px;
 }
 
 .my_projects_container {
     display: flex;
-    width: 1280px;
     background: var(--background-secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 64px;
+    gap: 96px;
     border-radius: 48px;
 }
 
 .projects_duet_wrap {
     display: flex;
+    gap: 40px;
+}
+
+.project_cover {
+    display: flex;
+    height: 480px;
+    object-fit:cover;
+    border-radius: 32px;
+}
+
+.project_single_container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .project_nameANDcta {
@@ -357,9 +457,18 @@ main {
 
 .project_cta {
     display: flex;
+    align-items: center;
+    gap: 4px;
     text-decoration: none;
 }
 
+.view_more_projects_cta {
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 12px;
+    color: var(--text-primary);
+}
 
 
 /* Lets work together */
@@ -378,11 +487,97 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 648px;
+    gap: 56px;
+    /* height: 416px; */
     background: linear-gradient(141deg, #2B2B2B 15.06%, #000 81.78%);
     padding: 56px 32px;
     border: 1px solid var(--Strokes-secondary, #2B2B2B);
     border-radius: 24px;
 }
+
+.available_for_work_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.available_for_work {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.get_your_project_running {}
+
+.green_pulser {
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(180deg, #36FF78 0%, #015B1E 100%);
+    border: 1px solid #00A136;
+    border-radius: 999px;
+    box-shadow: 0px 0px 8px 2px rgba(3, 173, 60, 0.50);
+}
+
+.available_for_new_projects_text {
+    color: var(--text-quaternary); 
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: inter;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    cursor: default;
+}
+
+.get_your_project {
+    color: var(--text-quaternary); 
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    font-family: inter;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    cursor: default;
+}
+
+.up_and_running {
+    color: var(--text-tertiary); 
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    font-family: inter;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    cursor: default;
+}
+
+.lets_connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 416px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 12px;
+    border-radius: 24px;
+    border: none;
+    background-color: linear-gradient(180deg, #FFF 0%, #E3E3E3 47.5%, #C4C4C4 100%);
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.40) inset;
+    font-family: inter;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 
 
 /* Footer */
@@ -406,10 +601,35 @@ footer {
 
 .made_with_love_by_me {
     display: flex;
+    gap: 8px;
+}
+
+.made_with {
+    color: var(--text-secondary); 
+    font-size: 12px;
+    line-height: 16px;
+    font-family: inter;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    cursor: default;
+}
+
+.by_abdiel_peguero {
+    color: var(--text-secondary); 
+    font-size: 12px;
+    line-height: 16px;
+    font-family: inter;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    cursor: default;
 }
 
 .social_media {
     display: flex;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 

@@ -448,9 +448,20 @@ main {
     font-family: Poppins;
     font-weight: 500;
     margin: 0;
-    gap: 12px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.navbar_contact_btn_text {
+    color: var(--text-primary);
+    font-family: Poppins; 
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
     cursor: pointer;
 }
 
@@ -1121,17 +1132,79 @@ footer {
 
 /* media queries */
 
-@media (max-width:390px) {
+@media (max-width:950px) {
 
-    .portfolio_profile_pic {
-        width: 232px;
-        height: 232px;
+    .navbar {
+        width: 752px;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .navbar {
+        width: 640px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .navbar {
+        width: 504px;
+        padding: 24px 48px;
+    }
+
+    .navbar_contact_btn_text {
+        display: none;
+    }
+
+    .navbar_list {
+        gap: 24px;
+    }
+}
+
+@media (max-width:428px) {
+    .navbar_selected {
+        font-size: 12px;
+        line-height: 24px;
     }
     
-    .project_cover {
-        width: 288px;
-        height: 288px;
+    .navbar_unselected {
+        font-size: 14px;
+        line-height: 24px;
     }
 
+    .navbar {
+        width: 504px;
+        padding: 24px 32px;
+    }
+
+    .navbar {
+        width: 358px;
+    }
 }
+
+@media (max-width:390px) {
+
+    .contact_btn_icon {
+        display: none;
+    }
+}
+
+@media (max-width:375px) {
+
+}
+
+@media (max-width:320px) {
+
+    .navbar {
+        width: 304px;
+        padding: 24px;
+    }
+
+    .ap_logo {
+        width: 32px;
+    }
+}
+
 

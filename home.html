@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-<body>
-    <main>
+<body id="smooth-wrapper">
+    <main id="smooth-content">
 
         <!-- loading page -->
         <div id="loadingPage" class="loading_page">
@@ -28,31 +27,37 @@
         </div>
 
         <!--navbar-->
-        <div class="navbar">
-            <div class="navbar_container">
-                <!--my logo-->
-                <a href="#">
-                    <img src="Assets/ap_logo.svg"  class="ap_logo">
-                </a>
-                <!--navbar list-->
-                <ul class="navbar_list">
-                    <li>
-                        <a href="#" class="navbar_selected">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar_unselected">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar_unselected">About</a>
-                    </li>
-                </ul>
-                <!--contant cta-->
-                <a href="#" target="_blank">
-                    <div class="contact_button">Contact <img src="Assets/email_cta_icon.svg" class="contact_btn_icon"></div>
-                </a>
+        <div class="navbar_master_container">
+            <div class="navbar">
+                <div class="navbar_container">
+                    <!--my logo-->
+                    <a href="#">
+                        <img src="Assets/ap_logo.svg"  class="ap_logo">
+                    </a>
+                    <!--navbar list-->
+                    <ul class="navbar_list">
+                        <li>
+                            <a href="#" class="navbar_selected">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar_unselected">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar_unselected">About</a>
+                        </li>
+                    </ul>
+                     <!--contant cta-->
+                    <a href="#" target="_blank">
+                        <div class="contact_button">
+                            <div class="navbar_contact_btn_text">
+                                Contact 
+                            </div>
+                            <img src="Assets/email_cta_icon.svg" class="contact_btn_icon">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-
         <!-- Scroll up button -->
 
         <a href="#" class="scroll_up_arrow_container">
@@ -63,20 +68,29 @@
 
         <div class="hero">
             <div class="hero_container">
-                <!--My profile photo-->
-                <img src="Assets/Portfolio_profile_pic.png" class="portfolio_profile_pic">
                 <!--Brief intro-->
-                <div class="short_bio">
-                    <h3 class="display_1_med">
+                <div class="photo_and_greeting">
+                    <!--My profile photo-->
+                    <img src="Assets/Portfolio_profile_2.png" class="portfolio_profile_pic">
+                    <h3 class="greetings">
                         👋 Hi! I'm Abdiel Peguero
                     </h3>
-                    <h5 class="title_1_reg">
-                        A product designer based in DR 🇩🇴 who uses design and code to craft digital experiences.
-                    </h5>
-                    <h5 class="title_1_reg">
-                        I design products that drive revenue growth using my visual design, design system, and frontend skills.
-                    </h5>
                 </div>
+                <h5 class="short_bio">
+                    Product designer based in DR 
+                    <img
+                        src="https://flagcdn.com/do.svg"
+                        width="30"
+                        alt="Dominican Republic"
+                    >
+                    and who uses design and code to craft digital experiences.
+                </h5>
+                <a href="#" >
+                    <button class="primary_button">
+                        More about me
+                        <img src="Assets/arrow_up_angle_24px_white.svg">
+                     </button>
+                </a>
             </div>
         </div>
 
@@ -86,10 +100,10 @@
             <!-- My projects heading -->
             <div class="project_heading">
                 <p class="title_2_reg">
-                    Want know what I’ve been up to?
+                    Exciting New Projects
                 </p>
                 <h3 class="display_1_med">
-                    See my latest work
+                    My latest work
                 </h3>
             </div>
 
@@ -101,17 +115,15 @@
 
                     <!--Momento project-->
                     <div class="project_single_container">
-                        <a href="#">
-                            <img src="Assets/cover_momento_project.png" class="project_cover">
+                        <a href="#" class="momento_project_cover_bg"> 
+                            <img src="Assets/Momento_homepage(light_mode)_desktop_view.png" class="project_cover_1_big">
                         </a>
                         <div class="project_nameANDcta">
                             <div class="title_2_med">
                                 Momento
                             </div>
                             <a href="#" class="project_cta">
-                                <div class="title_1_reg">
-                                    View project
-                                </div>
+                                View project
                                 <img src="Assets/arrow_up_angle_18px.svg">
                             </a>
                         </div>
@@ -119,17 +131,15 @@
 
                     <!--Opret project-->
                     <div class="project_single_container">
-                        <a href="#">
-                            <img src="Assets/cover_opret_project.png" class="project_cover">
+                        <a href="#" class="opret_project_cover_bg">
+                            <img src="Assets/Opret_mockup_cover.png" class="project_cover_1_big">
                         </a>
                         <div class="project_nameANDcta">
                             <div class="title_2_med">
                                 Opret
                             </div>
                             <a href="#" class="project_cta">
-                                <div class="title_1_reg">
-                                    View project
-                                </div>
+                                View project
                                 <img src="Assets/arrow_up_angle_18px.svg">
                             </a>
                         </div>
@@ -142,17 +152,15 @@
 
                     <!--Qik project-->
                     <div class="project_single_container">
-                        <a href="#">
-                            <img src="Assets/cover_qik_project.png" class="project_cover">
+                        <a href="#" class="qik_project_cover_bg">
+                            <img src="Assets/Qik_homepage_desktop_view.png" class="project_cover_1_big">
                         </a>
                         <div class="project_nameANDcta">
                             <div class="title_2_med">
                                 Qik
                             </div>
                             <a href="#" class="project_cta">
-                                <div class="title_1_reg">
-                                    View project
-                                </div>
+                                View project
                                 <img src="Assets/arrow_up_angle_18px.svg">
                             </a>
                         </div>
@@ -160,17 +168,15 @@
 
                     <!--ColaPago project-->
                     <div class="project_single_container">
-                        <a href="#">
-                            <img src="Assets/cover_colapago_project.png" class="project_cover">
+                        <a href="#" class="colapago_project_cover_bg">
+                            <img src="Assets/cover_colapago_project_new.png" class="project_cover_4_big">
                         </a>
                         <div class="project_nameANDcta">
                             <div class="title_2_med">
                                 ColaPago
                             </div>
                             <a href="#" class="project_cta">
-                                <div class="title_1_reg">
-                                    View project
-                                </div>
+                                Request access
                                 <img src="Assets/arrow_up_angle_18px.svg">
                             </a>
                         </div>
@@ -180,17 +186,17 @@
             </div>
 
             <!-- View more projects CTA -->
-            <a href="" class="view_more_projects_cta">
-                <div class="title_2_reg">
+            <a href="#">
+                <button class="secondary_button">
                     View more projects
-                </div>
-                <img src="Assets/arrow_up_angle_24px.svg">
+                    <img src="Assets/arrow_up_angle_24px.svg">
+                </button>
             </a> 
-
         </div>
 
         <!--Let's work together-->
         <div class="lets_work_together">
+
             <div class="lets_work_together_container">
                 <div class="available_for_work_container">
 
@@ -205,19 +211,15 @@
 
                     <!-- get your project up and running -->
                     <div class="get_your_project_running">
-                        <div class="get_your_project">
-                            Get your project
-                        </div>
-                        <div class="up_and_running">
-                            up and running!
-                        </div>
+                        Get your project 
+                        up and running!
                     </div>
 
                 </div>
                 <a href="#">
-                    <button class="lets_connect">
+                    <button class="primary_button">
                         Let's connect
-                        <img src="Assets/email_cta_icon.svg" alt="">
+                        <img src="Assets//arrow_up_angle_24px_white.svg">
                     </button>
                 </a>
             </div>
@@ -227,12 +229,15 @@
         <footer>
             <div class="footer_container">
                 <!--my logo-->
-                <a href="#">
-                    <img src="Assets/ap_logo.svg">
+                <a href="#" class="created_by_abdiel">
+                    <img src="Assets/ap_logo.svg" class="footer_logo">
+                    <div class="created_by_me">
+                        Created by Abdiel Peguero
+                    </div>
                 </a>
 
                 <!--made by me-->
-                <div class="made_with_love_by_me">
+                <!-- <div class="made_with_love_by_me">
                     <div class="made_with">
                         Made with
                     </div>
@@ -240,30 +245,49 @@
                     <div class="by_abdiel_peguero">
                         by Abdiel Peguero
                     </div>
-                </div>
+                </div> -->
 
                 <!--social media-->
                 <ul class="social_media">
                     <!--LinkedIn-->
                     <li>
-                        <a href="#" target="#"><img src="Assets/Linkedin_footer.svg" ></a>
+                        <a href="#" target="#">
+                            <div class="caption_med">
+                                LinkedIn
+                            </div>
+                        </a>
                     </li>
+
                     <!--X-->
                     <li>
-                        <a href="#" target="#"><img src="Assets/X_twitter_footer.svg" ></a>
+                        <a href="#" target="#">
+                            <div class="caption_med">
+                                Twitter
+                            </div>
+                        </a>
                     </li>
+
                     <!--Dribble-->
-                    <!-- <li>
-                        <a href="#" target="#"><img src="#" ></a>
-                    </li> -->
-                    <!--Email-->
                     <li>
-                        <a href="#" target="#"><img src="Assets/Email_footer.svg" ></a>
+                        <a href="#" target="#">
+                            <div class="caption_med">
+                                Dribble
+                            </div>
+                        </a>
+                    </li>
+
+                    <!--Behance -->
+                    <li>
+                        <a href="#" target="#">
+                            <div class="caption_med">
+                                Behance
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
         </footer>
-    </main>    
+    </main>  
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js" defer></script>

@@ -63,6 +63,7 @@ a {
     color: var(--text-primary); 
     font-size: 48px;
     line-height: 64px;
+    text-align: center;
     font-family: inter;
     font-weight: 500;
     font-style: normal;
@@ -82,13 +83,14 @@ a {
     cursor: default;
 }
 
-.title_3_reg>{
+.title_3_reg {
     color: var(--text-primary); 
     font-size: 24px;
     line-height: 32px;
     font-family: inter;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
     margin: 0;
     cursor: default;
 }
@@ -900,9 +902,156 @@ main {
 
 
 /* Scribbl */
+.scribbl_project_cover_bg {
+    display: flex;
+    width: 100%;
+    max-width: 844px;
+    min-width: 604px;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 48px;
+    background: linear-gradient(270deg, #249E9E 0%, #0A1B1F 100%), var(--Accent-quaternary, #F6F6F6);
+    box-shadow: 0px 2px 32px 0px rgba(158, 158, 158, 0.20);
+    background-clip: border-box;
+    transition: transform 1000ms;
+}
+
+.scribbl_project_cover_bg:hover {
+    transform: translateY(-8px);
+    transition: transform 250ms;
+}
 
 
 /* Miclaro */
+.miclaro_project_cover_bg {
+    display: flex;
+    width: 100%;
+    max-width: 844px;
+    min-width: 604px;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 48px;
+    background: linear-gradient(270deg, #9A0F0F 0%, #310200 100%), var(--Accent-quaternary, #F6F6F6);
+    box-shadow: 0px 2px 32px 0px rgba(158, 158, 158, 0.20);
+    background-clip: border-box;
+    transition: transform 1000ms;
+}
+
+.miclaro_project_cover_bg:hover {
+    transform: translateY(-8px);
+    transition: transform 250ms;
+}
+
+/* My testimnoies */
+
+
+.testimonies {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 11em 8% 11em 8%;
+    text-align: center;
+    gap: 5em;
+}
+
+.testimonies_container {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    text-align: start;
+    gap: 5em;
+    max-width: 964px;
+}
+
+.testim-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+.testim-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.testimonies-details {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--background-secondary);
+    padding: 24px;
+    border-radius: 32px;
+    gap: 12px;
+    max-width: 1080px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.testimonies-details:hover {
+    background-color: var(--background-tertiary);
+}
+
+.testim-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 32px;
+}
+
+.quotation-mak {
+    width: 2rem;
+}
+
+
+.testimony_text {
+    font-family: inter;
+    font-style: normal;
+    font-size: clamp(1rem, 3vw, 1.10rem);
+    font-weight: 400;
+    line-height: 170%; /*36px*/
+    margin: 0;
+}
+
+.testim-person-photo {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.person-photo {
+    width: 5rem;
+    border-radius: 99px;
+    filter: grayscale(80%);
+}
+
+.testim-person-role{
+    display: flex;
+    flex-direction: column;
+}
+
+.person-name {
+    color: var(--text-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(.90rem, 3vw, 1rem);
+    line-height: 24px; /* 140% */
+    margin: 0;
+}
+
+.person-role {
+    color: var(--text-secondary);
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(.80rem, 3vw, .90rem);
+    margin: 0;
+}
 
 
 
@@ -1171,6 +1320,14 @@ footer {
         flex-direction: column;
         gap: 64px;
     }
+
+    .testim-1 {
+        flex-direction: column;
+    }
+    
+    .testim-2 {
+        flex-direction: column;
+    }
 }
 
 
@@ -1193,6 +1350,10 @@ footer {
 @media (max-width:796px) {
 
     .my_projects {
+        padding: 112px 12%;
+    }
+
+    .testimonies {
         padding: 112px 12%;
     }
 
@@ -1236,13 +1397,14 @@ footer {
         border-radius: 34px;
     }
 
-    .scribble_project_cover_bg {
+    .scribbl_project_cover_bg {
         min-width: 312px;
         border-radius: 34px;
     }
 
     .miclaro_project_cover_bg {
-        min-width: 312px34        border-radius: 24px;
+        min-width: 312px;        
+        border-radius: 34px;
     }
 }
 

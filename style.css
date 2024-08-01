@@ -437,6 +437,14 @@ main {
     font-weight: 500;
     margin: 0;
     cursor: pointer;
+    transition: transform 1200ms;
+}
+
+.navbar_selected:hover {
+    transform: translateY(-4px);
+    transition: transform 550ms;
+    border: 12px var(--strokes-tertiary);
+    border-bottom: 1px solid var(--strokes-tertiary);
 }
 
 .navbar_unselected {
@@ -448,6 +456,13 @@ main {
     font-weight: 400;
     margin: 0;
     cursor: pointer;
+    transition: transform 1200ms;
+}
+
+.navbar_unselected:hover {
+    transform: translateY(-4px);
+    transition: transform 550ms;
+    border-bottom: 1px solid var(--strokes-primary);
 }
 
 .contact_button {
@@ -498,14 +513,13 @@ main {
     backdrop-filter: blur(4px);
     z-index: 1;
 }
-
+/* Homepage */
 /* hero section */
 
 .hero {
     display: flex;
     flex-direction: column;
     width: inherit;
-    height: vh;
     padding: 312px 96px 112px 96px;
     justify-content: center;
     align-items: center;
@@ -661,6 +675,9 @@ main {
     cursor: pointer;
 }
 
+.project_cta:hover {
+    border-bottom: 1px solid var(--strokes-tertiary);
+}
 
 
 /* 1 big/small */
@@ -996,6 +1013,66 @@ main {
 
 .lets_connect:hover {
     background: linear-gradient(132deg, #000 26.92%, #3D3D3D 96.01%);
+}
+
+/* Project page */
+/* project_navbar */
+
+.project_page_navbar {
+    display: flex;
+    width: inherit;
+    max-width: 1000px;
+    min-width: 248px;
+    padding: 24px 48px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(246, 246, 246, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%);
+    border-radius: 48px;
+    border: 1px solid var(--Strokes-secondary, #ECEDF4);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(15px);
+}
+
+/* project_hero */
+.project_hero {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    padding: 312px 96px 112px 96px;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-alternative-3);
+}
+
+.project_hero_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 640px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+/* about page */
+/* about page navbar */
+
+.about_page_navbar {
+    display: flex;
+    width: inherit;
+    max-width: 1000px;
+    min-width: 248px;
+    padding: 24px 48px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(246, 246, 246, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%);
+    border-radius: 48px;
+    border: 1px solid var(--Strokes-secondary, #ECEDF4);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(15px);
 }
 
 

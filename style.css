@@ -3,6 +3,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    width: inherit;
+}
+
 :root {
 
     /** text color variable */
@@ -221,25 +235,6 @@ strong {
 
 
 
-/** General settings */
-
-
-body {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    /* scroll-behavior: smooth; */
-}
-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    scroll-behavior: smooth;
-}
-
-
 /**preloader */
 
 .loading_page {
@@ -329,7 +324,7 @@ main {
     animation-range: inherit;
 }
 
-@keyframes reveal {
+/* @keyframes reveal {
     from {
     opacity: 0;
     }
@@ -337,7 +332,7 @@ main {
     to {
     opacity: 1;
     }
-}
+} */
 
 .primary_button:hover,
 .primary_button:focus-visible {
@@ -372,7 +367,7 @@ main {
     animation-range: inherit;
 }
 
-@keyframes reveal {
+/* @keyframes reveal {
     from {
     opacity: 0;
     }
@@ -380,7 +375,7 @@ main {
     to {
     opacity: 1;
     }
-}
+} */
 
 .secondary_button:hover,
 .secondary_button:focus-visible {
@@ -1034,7 +1029,26 @@ main {
     border: 1px solid #00A136;
     border-radius: 999px;
     box-shadow: 0px 0px 8px 2px rgba(3, 173, 60, 0.50);
+    
+    /* Add animation */
+    animation: pulse 2s infinite ease-in-out;
 }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 0px 8px 2px rgba(3, 173, 60, 0.50);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 12px 4px rgba(3, 173, 60, 0.75);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 0px 8px 2px rgba(3, 173, 60, 0.50);
+    }
+}
+
 
 .available_for_new_projects_text {
     color: var(--Text-primary); 
@@ -1301,6 +1315,11 @@ main {
 .logo4 {
     animation-delay: calc(30s / 4 * (4 - 4) * -1);
     padding: 0 12px;
+}
+
+.brands_logo:hover {
+    animation-duration: 40s;
+    animation-delay: -14s;
 }
 
 

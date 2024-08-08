@@ -1,0 +1,189 @@
+/** Color variables */
+
+:root {
+
+    /** text color variable */
+    --text-primary: #212121;
+    --text-secondary: #666666;
+    --text-tertiary: #9c9c9c;
+    --text-quaternary: #ffffff;
+
+    /** background color variables */
+    --background-primary: #ffffff;
+    --background-secondary: #f5f5f5;
+    --background-tertiary: #ecedf4;
+    --background-quaternary: #212121;
+    --background-alternative-1: #c4c4c4;
+    --background-alternative-2: #2b2b2b;
+    --background-alternative-3: #fcfcfc;
+
+    /** stroke color variables */
+    --strokes-primary: #d4d4d4;
+    --strokes-secondary: #ecedf4;
+    --strokes-tertiary: #212121;
+    --strokes-quaternary: #2b2b2b;
+    --strokes-alternative: #edeef2;
+
+    /** accent color variables */
+    --accent-primary: #ecedf4;
+    --accent-secondary: #f5f5f5;
+    --accent-tertiary: #212121;
+    --accent-quaternary: #2b2b2b;
+
+    /** alert color variables */
+    --alert-primary: #2c582f;
+    --alert-secondary: #ecedf4;
+
+}
+
+/** Project Detail Navbar */
+.ap_logo {
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.ap_logo:hover {
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+
+.forward_backward_buttons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--text-primary); 
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: inter;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 1000ms;
+}
+
+.forward_backward_buttons:hover {
+    transform: translateY(-3px);
+    transition: transform 550ms;
+    font-weight: 450;
+}
+
+.backward_forward_icon {
+    height: 24px;
+    width: 24px;
+}
+
+/** Porject general information*/
+
+.project_general_information {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    padding: 312px 64px 96px 64px;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-primary);
+}
+
+.project_general_information_body {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    gap: 2%;
+}
+
+.project_general_information_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 220px;
+    gap: 16px;
+}
+
+.project_details_contianer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project_detail_subheading {
+    color: var(--text-primary); 
+    font-size: 14px;
+    line-height: 20px;
+    font-family: inter;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    cursor: default;
+}
+
+.project_detail_info {
+    color: var(--text-secondary); 
+    font-size: 16px;
+    line-height: 24px;
+    font-family: inter;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    cursor: default;
+}
+
+.project_industry_badge_list {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+}
+
+.momento_badge_container {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #6516DE;
+    color: var(--text-quaternary); 
+    font-size: 12px;
+    line-height: 16px;
+    font-family: inter;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+.project_summary_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding-left: 5%;
+    border-left: 1px solid var(--strokes-alternative);
+}
+
+.project_title {
+    color: var(--text-primary); 
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    font-family: inter;
+    font-style: normal;
+    text-align: left;
+    margin: 0;
+    cursor: default;
+}
+
+.project_description {
+    color: var(--text-secondary); 
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: inter;
+    font-style: normal;
+    text-align: left;
+    margin: 0;
+    cursor: default;
+}

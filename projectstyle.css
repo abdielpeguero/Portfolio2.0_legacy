@@ -250,6 +250,14 @@
     max-width: 528px;
 }
 
+.figma_iFrame {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    height: 820px;
+    border-radius: 24px;
+}
+
 
 /* * media queries */
 

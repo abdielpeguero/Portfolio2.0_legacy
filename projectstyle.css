@@ -49,6 +49,7 @@
 .forward_backward_buttons {
     display: flex;
     align-items: center;
+    width: 112px;
     gap: 4px;
     text-decoration: none;
     color: var(--text-primary); 
@@ -80,7 +81,7 @@
     display: flex;
     flex-direction: column;
     width: inherit;
-    padding: 312px 64px 96px 64px;
+    padding: 312px 4% 96px 4%;
     justify-content: center;
     align-items: center;
     background: var(--background-primary);
@@ -186,4 +187,90 @@
     text-align: left;
     margin: 0;
     cursor: default;
+}
+
+
+/** Project mockups  */
+
+.project_mockups {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.projects_mockups_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1080px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    padding: 0 0 64px 0;
+}
+
+.project_container_1 {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.project_container_2 {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.project_container_3 {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.dual_mockup {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mockup_a {
+    display: flex;
+    width: 100%;
+    max-width: 528px;
+}
+
+.mockup_b {
+    display: flex;
+    width: 100%;
+    max-width: 528px;
+}
+
+.figma_iFrame {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    height: 820px;
+    border-radius: 24px;
+}
+
+
+/* * media queries */
+
+@media (max-width:872px) {
+    .project_general_information_body {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .project_summary_container {
+        border-left: none;
+        border-top: 1px solid var(--strokes-alternative);
+        padding-left: 0;
+        padding-top: 4%;
+    }
 }

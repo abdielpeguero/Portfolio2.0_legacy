@@ -2013,13 +2013,6 @@ footer {
 
 @media (max-width:520px) {
 
-    .hero {
-        padding: 232px 32px 112px 32px;
-    }
-}
-
-@media (max-width:428px) {
-
     .navbar_master_container {
         padding: 0%;
         top: 0;
@@ -2043,6 +2036,13 @@ footer {
         font-size: 12px;
         line-height: 20px;
     }
+
+    .hero {
+        padding: 232px 32px 112px 32px;
+    }
+}
+
+@media (max-width:428px) {
 
     .hero {
         padding: 176px 16px 112px 16px;

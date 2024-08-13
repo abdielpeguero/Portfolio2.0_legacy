@@ -49,9 +49,28 @@
 
 .forward_backward_buttons {
     display: flex;
+    width: 144px;
+    justify-content: center;
     align-items: center;
-    width: 112px;
     gap: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 1000ms;
+}
+
+.forward_backward_buttons:hover {
+    transform: translateY(-3px);
+    transition: transform 550ms;
+}
+
+.forward_backward_buttons_disable {
+    opacity: 0;
+    width: 144px;
+    cursor: default;
+}
+
+
+.backward_forward_text {
     text-decoration: none;
     color: var(--text-primary); 
     font-size: 14px;
@@ -62,19 +81,12 @@
     text-align: center;
     margin: 0;
     cursor: pointer;
-    transition: transform 1000ms;
 }
 
-.forward_backward_buttons:hover {
-    transform: translateY(-3px);
-    transition: transform 550ms;
+.backward_forward_text:hover {
     font-weight: 450;
 }
 
-.forward_backward_buttons_disable {
-    opacity: 0;
-    cursor: default;
-}
 
 .backward_forward_icon {
     height: 24px;
@@ -225,20 +237,18 @@
 .dual_mockup {
     display: flex;
     width: 100%;
-    max-width: 1080px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 
-.mockup_a {
-    display: flex;
-    width: 100%;
+.mockup_a { 
+    width: 50%;
     max-width: 528px;
 }
 
 .mockup_b {
-    display: flex;
-    width: 100%;
+    width: 50%;
     max-width: 528px;
 }
 
@@ -549,5 +559,39 @@
         border-top: 1px solid var(--strokes-alternative);
         padding-left: 0;
         padding-top: 4%;
+    }
+}
+
+@media (max-width:796px) {
+
+    .forward_backward_buttons {
+        width: 24px;
+    }
+
+    .backward_forward_text {
+        display: none;
+    }
+
+    .project_general_information {
+        padding: 224px 4% 96px 4%;
+    }
+
+    .dual_mockup {
+        flex-direction: column;
+    }
+
+    .mockup_a { 
+        width: 100%;
+    }
+    
+    .mockup_b {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .project_general_information {
+        padding: 136px 4% 96px 4%;
     }
 }

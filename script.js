@@ -89,6 +89,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// AP Logo Interaction
+document.addEventListener('DOMContentLoaded', function() {
+
+    const apLogo = document.getElementById('ap_logo');
+
+    // Add a click event listener for AP Logo
+    apLogo.addEventListener('click', function(event) {
+        event.preventDefault(); //Prevent default anchor behavior
+        navigateToPage('home.html');
+    });
+
+    //function to navigate to homepage
+    function navigateToPage(page) {
+        window.location.href = page; //Navigate to homepage
+    }
+});
+
 
 // Get the scroll up arrow element
 const scrollUpArrow = document.querySelector('.scroll_up_arrow_container');
@@ -117,3 +134,5 @@ scrollDownArrow.addEventListener('click', function(event) {
         behavior: 'smooth'
     });
 });
+
+
